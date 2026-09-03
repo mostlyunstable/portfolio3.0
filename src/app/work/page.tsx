@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function WorkPage() {
   return (
-    <article className="pt-24 md:pt-32 pb-32">
-      <header className="px-6 md:px-12 lg:px-24 mb-24 max-w-4xl">
+    <article className="pt-16 md:pt-32 pb-24 md:pb-32">
+      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-16 md:mb-24 max-w-4xl">
         <FadeIn>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
             Selected Work
@@ -23,7 +23,7 @@ export default function WorkPage() {
         </FadeIn>
       </header>
 
-      <section className="px-6 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 pt-24">
+      <section className="px-6 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 pt-16 md:pt-24">
         <div className="flex flex-col gap-32">
           {projects.map((project, index) => (
             <FadeIn key={project.id} delay={0.1}>

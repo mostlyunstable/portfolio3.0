@@ -22,9 +22,9 @@ export default async function CaseStudyPage(props: { params: Promise<{ slug: str
   const nextProject = projectIndex < projects.length - 1 ? projects[projectIndex + 1] : null;
 
   return (
-    <article className="pb-32 pt-24 md:pt-32">
+    <article className="pb-32 pt-16 md:pt-24 md:pt-32">
       {/* Hero Section */}
-      <header className="px-6 md:px-12 lg:px-24 mb-24 max-w-5xl">
+      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-24 max-w-5xl">
         <div className="flex items-center gap-3 mb-8">
           <span className="text-sm font-bold tracking-widest text-stone-400 uppercase font-mono">
             {project.projectNumber} &mdash; {project.client}
@@ -42,7 +42,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ slug: str
       </header>
 
       {/* Meta Grid */}
-      <section className="px-6 md:px-12 lg:px-24 mb-32 border-y border-stone-200 dark:border-stone-800 py-12">
+      <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 border-y border-stone-200 dark:border-stone-800 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           <div className="flex flex-col gap-2">
             <span className="text-xs font-bold tracking-widest text-stone-400 uppercase font-mono">Role</span>
@@ -72,7 +72,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ slug: str
       {project.caseStudy && (
         <>
           {/* Overview & Problem */}
-          <section className="px-6 md:px-12 lg:px-24 mb-32 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24 max-w-7xl">
+          <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24 max-w-7xl">
             <div className="md:col-span-1">
               <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase font-mono sticky top-32">
                 OVERVIEW
@@ -95,7 +95,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ slug: str
 
           {/* Results / Metrics */}
           {project.caseStudy.results && (
-            <section className="px-6 py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
+            <section className="px-6 py-16 md:py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
               <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase mb-16 font-mono">OUTCOMES</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl">
                 {project.caseStudy.results.quantitative.map((metric, index) => (
@@ -114,7 +114,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ slug: str
       )}
 
       {/* Dynamic Navigation Footer */}
-      <footer className="px-6 py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 mt-24">
+      <footer className="px-6 py-16 md:py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 mt-24">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
           
           <div className="flex-1 w-full border-b md:border-b-0 border-stone-200 dark:border-stone-800 pb-12 md:pb-0 md:border-r pr-0 md:pr-12 text-left">

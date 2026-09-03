@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="px-6 py-24 md:px-12 lg:px-24 md:py-32 relative z-10">
+    <section className="px-6 pt-12 pb-16 md:py-32 md:px-12 lg:px-24 md:py-32 relative z-10">
       <div className="max-w-4xl">
         <FadeIn delay={0.1}>
           <p className="text-sm font-bold tracking-widest text-stone-500 uppercase mb-8 font-mono">

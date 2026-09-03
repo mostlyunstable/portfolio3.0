@@ -12,7 +12,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full px-6 py-6 md:px-12 lg:px-24 flex justify-between items-center border-b border-stone-200 dark:border-stone-800 relative z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-md">
+    <nav className="w-full px-6 py-4 md:py-6 md:px-12 lg:px-24 flex justify-between items-center border-b border-stone-200 dark:border-stone-800 relative z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-md">
       <Link href="/" className="font-bold text-xl tracking-tight uppercase hover:opacity-60 transition-opacity">
         {profile.name.split(' ')[0]}
       </Link>

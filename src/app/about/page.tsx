@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <article className="pt-24 md:pt-32 pb-32">
-      <header className="px-6 md:px-12 lg:px-24 mb-32 max-w-5xl">
+    <article className="pt-16 md:pt-32 pb-24 md:pb-32">
+      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-16 md:mb-32 max-w-5xl">
         <FadeIn>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
             About Mayank
@@ -25,7 +25,7 @@ export default function AboutPage() {
       </header>
 
       {/* Grid Meta */}
-      <section className="px-6 md:px-12 lg:px-24 mb-32 border-y border-stone-200 dark:border-stone-800 py-12">
+      <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 border-y border-stone-200 dark:border-stone-800 py-12">
         <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           <StaggerItem className="flex flex-col gap-2">
             <span className="text-xs font-bold tracking-widest text-stone-400 uppercase font-mono">Location</span>
@@ -49,7 +49,7 @@ export default function AboutPage() {
       </section>
 
       {/* Experience */}
-      <section className="px-6 md:px-12 lg:px-24 mb-32">
+      <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32">
         <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
           <div className="w-full md:w-1/3">
             <FadeIn>
@@ -84,7 +84,7 @@ export default function AboutPage() {
       </section>
 
       {/* Approach / Working Style */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
+      <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
         <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
           <div className="w-full md:w-1/3">
             <FadeIn>

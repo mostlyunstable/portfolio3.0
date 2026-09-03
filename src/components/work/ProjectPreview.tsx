@@ -6,7 +6,7 @@ export default function ProjectPreview({ project, index }: { project: Project; i
   const keyMetric = project.caseStudy?.results?.quantitative?.[0];
 
   return (
-    <div className={`group flex flex-col gap-12 md:gap-16 p-8 md:p-12 border border-stone-200 dark:border-stone-800 bg-stone-50/50 dark:bg-stone-900/20 hover:bg-white dark:hover:bg-stone-900 hover:border-stone-400 dark:hover:border-stone-500 transition-colors duration-300 rounded-xl ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+    <div className={`group flex flex-col gap-8 md:gap-16 p-6 md:p-12 border border-stone-200 dark:border-stone-800 bg-stone-50/50 dark:bg-stone-900/20 hover:bg-white dark:hover:bg-stone-900 hover:border-stone-400 dark:hover:border-stone-500 transition-colors duration-300 rounded-xl ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       
       {/* Typographic "Visual" Side */}
       <div className="w-full md:w-1/2 bg-stone-100 dark:bg-stone-950 p-8 md:p-16 flex flex-col justify-center items-center text-center border border-stone-200 dark:border-stone-800 rounded-lg group-hover:border-stone-300 dark:group-hover:border-stone-700 transition-colors duration-300">
@@ -47,7 +47,7 @@ export default function ProjectPreview({ project, index }: { project: Project; i
           </span>
         </div>
         
-        <h3 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">{project.title}</h3>
+        <h3 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">{project.title}</h3>
         <p className="text-lg text-stone-600 dark:text-stone-400 mb-10 leading-relaxed">
           {project.shortDescription}
         </p>

@@ -35,7 +35,7 @@ export default function ContactPage() {
   };
 
   return (
-    <article className="pt-24 md:pt-32 pb-32 min-h-screen flex flex-col justify-center">
+    <article className="pt-16 md:pt-32 pb-24 md:pb-32 min-h-screen flex flex-col justify-center">
       <div className="px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           

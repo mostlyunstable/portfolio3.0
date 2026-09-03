@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function AboutPreview() {
   return (
-    <section className="px-6 py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
+    <section className="px-6 py-16 md:py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
       <div className="max-w-4xl">
         <FadeIn>
           <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase mb-8 font-mono">
