@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom Accessibility Focus System */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid theme('colors.stone.900');
+  outline-offset: 4px;
+}
+
+.dark *:focus-visible {
+  outline: 2px solid theme('colors.stone.100');
+}
