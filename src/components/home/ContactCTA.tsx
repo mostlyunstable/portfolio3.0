@@ -12,7 +12,7 @@ export default function ContactCTA() {
       </FadeIn>
       <FadeIn delay={0.1}>
         <p className="text-xl text-stone-600 dark:text-stone-400 max-w-2xl mb-12">
-          Whether you're looking to automate a complex workflow, integrate AI into an existing product, or build something from the ground up, let's talk.
+          Whether you&apos;re looking to automate a complex workflow, integrate AI into an existing product, or build something from the ground up, let&apos;s talk.
         </p>
       </FadeIn>
       

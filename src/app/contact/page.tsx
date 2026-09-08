@@ -48,7 +48,7 @@ export default function ContactPage() {
               </FadeIn>
               <FadeIn delay={0.1}>
                 <p className="text-xl md:text-2xl font-light text-stone-600 dark:text-stone-400 max-w-md leading-relaxed mb-12">
-                  Whether you need a custom automation pipeline, an AI orchestration layer, or a high-performance web application—let's discuss your architecture.
+                  Whether you need a custom automation pipeline, an AI orchestration layer, or a high-performance web application—let&apos;s discuss your architecture.
                 </p>
               </FadeIn>
             </div>
