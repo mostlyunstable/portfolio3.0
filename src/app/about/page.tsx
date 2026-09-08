@@ -2,6 +2,7 @@ import { profile } from '@/data/profile';
 import { experience } from '@/data/experience';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/FadeIn';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'About | Mayank Kumar',
@@ -11,17 +12,40 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <article className="pt-16 md:pt-32 pb-24 md:pb-32">
-      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-16 md:mb-32 max-w-5xl">
-        <FadeIn>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
-            About Mayank
-          </h1>
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <p className="text-xl md:text-3xl font-light text-stone-600 dark:text-stone-400 leading-snug">
-            {profile.bio}
-          </p>
-        </FadeIn>
+      
+      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 max-w-7xl">
+        <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-24 items-center">
+          
+          <div className="w-full md:w-3/5">
+            <FadeIn>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
+                About Mayank
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <p className="text-xl md:text-3xl font-light text-stone-600 dark:text-stone-400 leading-snug">
+                {profile.bio}
+              </p>
+            </FadeIn>
+          </div>
+
+          <div className="w-full md:w-2/5">
+            <FadeIn delay={0.2}>
+              <div className="relative aspect-[4/5] w-full max-w-md mx-auto md:ml-auto md:mr-0 overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800 shadow-2xl">
+                <Image 
+                  src="/profile.jpg" 
+                  alt="Mayank Kumar" 
+                  fill 
+                  priority
+                  className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-2xl pointer-events-none"></div>
+              </div>
+            </FadeIn>
+          </div>
+
+        </div>
       </header>
 
       {/* Grid Meta */}
