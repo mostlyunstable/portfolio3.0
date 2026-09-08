@@ -2,10 +2,16 @@ import { ExperienceItem } from '@/types';
 
 export const experience: ExperienceItem[] = [
   {
+    company: 'Krunalkumar Shah',
+    role: 'Automation Engineer',
+    period: 'Aug 2026 – Present',
+    description: 'Architecting high-throughput automation pipelines and training custom machine learning models to streamline operational workflows and optimize complex data processing tasks.'
+  },
+  {
     company: 'Utservio',
     role: 'AI Automation Engineer',
-    period: 'Jun 2026 – Present',
-    description: 'Building an automated data search and aggregation engine to surface competitor insights for market positioning. Defined a KPI metrics dictionary and dashboard concept covering data sourcing strategy and design documentation.'
+    period: 'Jun 2026 – Aug 2026',
+    description: 'Built an automated data search and aggregation engine to surface competitor insights for market positioning. Defined a KPI metrics dictionary and dashboard concept covering data sourcing strategy and design documentation.'
   },
   {
     company: 'Armedias',
