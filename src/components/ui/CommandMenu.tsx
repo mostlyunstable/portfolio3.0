@@ -104,7 +104,7 @@ export function CommandMenu() {
                   onSelect={() => runCommand(() => router.push("/"))}
                   className="flex items-center gap-3 px-3 py-3 text-sm text-stone-900 dark:text-stone-100 rounded-md cursor-pointer aria-selected:bg-stone-100 dark:aria-selected:bg-stone-900 aria-selected:text-stone-900 dark:aria-selected:text-stone-50 transition-colors"
                 >
-                  <Home size={16} /> Home
+                  <User size={16} /> About
                 </Command.Item>
                 <Command.Item 
                   onSelect={() => runCommand(() => router.push("/work"))}
@@ -112,12 +112,7 @@ export function CommandMenu() {
                 >
                   <Briefcase size={16} /> Work & Case Studies
                 </Command.Item>
-                <Command.Item 
-                  onSelect={() => runCommand(() => router.push("/about"))}
-                  className="flex items-center gap-3 px-3 py-3 text-sm text-stone-900 dark:text-stone-100 rounded-md cursor-pointer aria-selected:bg-stone-100 dark:aria-selected:bg-stone-900 aria-selected:text-stone-900 dark:aria-selected:text-stone-50 transition-colors"
-                >
-                  <User size={16} /> About
-                </Command.Item>
+                
                 <Command.Item 
                   onSelect={() => runCommand(() => router.push("/contact"))}
                   className="flex items-center gap-3 px-3 py-3 text-sm text-stone-900 dark:text-stone-100 rounded-md cursor-pointer aria-selected:bg-stone-100 dark:aria-selected:bg-stone-900 aria-selected:text-stone-900 dark:aria-selected:text-stone-50 transition-colors"
