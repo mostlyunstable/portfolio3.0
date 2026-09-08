@@ -13,10 +13,10 @@ export default function AboutPage() {
   return (
     <article className="pt-16 md:pt-32 pb-24 md:pb-32">
       
-      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 max-w-7xl">
-        <div className="flex flex-col-reverse md:flex-row gap-12 md:gap-24 items-center">
+      <header className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 max-w-7xl mx-auto">
+        <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-16 justify-between items-center">
           
-          <div className="w-full md:w-3/5">
+          <div className="w-full md:w-3/5 lg:w-1/2">
             <FadeIn>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
                 About Mayank
@@ -29,15 +29,15 @@ export default function AboutPage() {
             </FadeIn>
           </div>
 
-          <div className="w-full md:w-2/5">
-            <FadeIn delay={0.2}>
-              <div className="relative aspect-[4/5] w-full max-w-md mx-auto md:ml-auto md:mr-0 overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800 shadow-2xl">
+          <div className="w-full md:w-2/5 lg:w-5/12 flex justify-end">
+            <FadeIn delay={0.2} className="w-full flex justify-end">
+              <div className="relative aspect-[4/5] w-full max-w-[400px] overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800 shadow-2xl">
                 <Image 
                   src="/profile.jpg" 
                   alt="Mayank Kumar" 
                   fill 
                   priority
-                  className="object-cover filter grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                  className="object-cover transition-all duration-700 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 40vw"
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-2xl pointer-events-none"></div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
       {/* Grid Meta */}
       <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32 border-y border-stone-200 dark:border-stone-800 py-12">
-        <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+        <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 max-w-7xl mx-auto">
           <StaggerItem className="flex flex-col gap-2">
             <span className="text-xs font-bold tracking-widest text-stone-400 uppercase font-mono">Location</span>
             <span className="font-medium text-sm md:text-base">{profile.location}</span>
@@ -74,7 +74,7 @@ export default function AboutPage() {
 
       {/* Experience */}
       <section className="px-6 md:px-12 lg:px-24 mb-16 md:mb-32">
-        <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
+        <div className="flex flex-col md:flex-row gap-12 lg:gap-24 max-w-7xl mx-auto">
           <div className="w-full md:w-1/3">
             <FadeIn>
               <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase font-mono sticky top-32">
@@ -109,7 +109,7 @@ export default function AboutPage() {
 
       {/* Approach / Working Style */}
       <section className="px-6 md:px-12 lg:px-24 py-16 md:py-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
-        <div className="flex flex-col md:flex-row gap-12 lg:gap-24">
+        <div className="flex flex-col md:flex-row gap-12 lg:gap-24 max-w-7xl mx-auto">
           <div className="w-full md:w-1/3">
             <FadeIn>
               <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase font-mono">

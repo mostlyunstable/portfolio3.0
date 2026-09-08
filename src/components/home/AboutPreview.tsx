@@ -5,10 +5,10 @@ import Image from 'next/image';
 export default function AboutPreview() {
   return (
     <section className="px-6 py-16 md:py-24 md:px-12 lg:px-24 border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-900/50">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-24 items-center">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-16 justify-between items-center">
         
         {/* Text Side */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-3/5 lg:w-1/2">
           <FadeIn>
             <h2 className="text-sm font-bold tracking-widest text-stone-500 uppercase mb-8 font-mono">
               ABOUT MAYANK
@@ -34,17 +34,16 @@ export default function AboutPreview() {
         </div>
 
         {/* Image Side */}
-        <div className="w-full md:w-1/2">
-          <FadeIn delay={0.3}>
-            <div className="relative aspect-[3/4] w-full max-w-md mx-auto md:ml-auto md:mr-0 overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800 bg-stone-200 dark:bg-stone-800 group shadow-2xl">
+        <div className="w-full md:w-2/5 lg:w-5/12 flex justify-end">
+          <FadeIn delay={0.3} className="w-full flex justify-end">
+            <div className="relative aspect-[3/4] w-full max-w-[360px] overflow-hidden rounded-2xl border border-stone-200 dark:border-stone-800 bg-stone-200 dark:bg-stone-800 group shadow-2xl">
               <Image 
                 src="/profile.jpg" 
                 alt="Mayank Kumar" 
                 fill 
-                className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 40vw"
               />
-              {/* Subtle inner shadow overlay */}
               <div className="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-2xl pointer-events-none"></div>
             </div>
           </FadeIn>
